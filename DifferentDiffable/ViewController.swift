@@ -76,6 +76,8 @@ class ViewController: UIViewController {
 
         if changeNum % 5 == 0 {
             newItems.insert(Item.🌮(UUID()), at: abs(newItems.count - changeNum % newItems.count))
+        } else if changeNum % 6 == 0 {
+            newItems.removeLast(1   )
         }
 
         items.value = newItems
