@@ -21,20 +21,20 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NumberCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NumberCell" id="wTR-L0-DXm" customClass="NumberCell" customModule="DifferentDiffable" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43"/>
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wTR-L0-DXm" id="Yz0-gK-7Sg">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This shows a number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8u-iR-MGJ">
-                                                    <rect key="frame" x="20" y="11" width="162" height="21"/>
+                                                    <rect key="frame" x="20" y="11" width="162" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85g-Xg-dV3">
-                                                    <rect key="frame" x="383" y="11" width="11" height="21"/>
+                                                    <rect key="frame" x="383" y="11.5" width="11" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -53,33 +53,32 @@
                                             <outlet property="numberLabel" destination="85g-Xg-dV3" id="o1B-SR-P08"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DateCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DateCell" id="bII-86-cY3" customClass="DateCell" customModule="DifferentDiffable" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="71" width="414" height="43"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DateCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DateCell" rowHeight="95" id="bII-86-cY3" customClass="DateCell" customModule="DifferentDiffable" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="71.5" width="414" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bII-86-cY3" id="mEC-w1-W4y">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This shows the date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUW-vq-EcM">
-                                                    <rect key="frame" x="20" y="11" width="152" height="21"/>
+                                                    <rect key="frame" x="20" y="11" width="152" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date here" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUV-6Q-h5W">
-                                                    <rect key="frame" x="321" y="11" width="73" height="21"/>
+                                                    <rect key="frame" x="20" y="63" width="73" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="rUV-6Q-h5W" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YUW-vq-EcM" secondAttribute="trailing" constant="4" id="BwN-pG-zl0"/>
-                                                <constraint firstItem="rUV-6Q-h5W" firstAttribute="centerY" secondItem="YUW-vq-EcM" secondAttribute="centerY" id="GS8-Fg-jTA"/>
                                                 <constraint firstItem="YUW-vq-EcM" firstAttribute="leading" secondItem="mEC-w1-W4y" secondAttribute="leadingMargin" id="Ie2-xh-PK5"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="YUW-vq-EcM" secondAttribute="bottom" id="KDI-6E-Rxx"/>
-                                                <constraint firstAttribute="trailing" secondItem="rUV-6Q-h5W" secondAttribute="trailing" constant="20" symbolic="YES" id="mmu-x4-XbC"/>
+                                                <constraint firstItem="rUV-6Q-h5W" firstAttribute="top" relation="greaterThanOrEqual" secondItem="YUW-vq-EcM" secondAttribute="bottom" constant="4" id="VuO-d7-JFI"/>
                                                 <constraint firstItem="YUW-vq-EcM" firstAttribute="top" secondItem="mEC-w1-W4y" secondAttribute="topMargin" id="pe6-fs-Tth"/>
+                                                <constraint firstItem="rUV-6Q-h5W" firstAttribute="leading" secondItem="mEC-w1-W4y" secondAttribute="leadingMargin" id="tRu-Fr-tL7"/>
+                                                <constraint firstItem="rUV-6Q-h5W" firstAttribute="bottom" secondItem="mEC-w1-W4y" secondAttribute="bottomMargin" id="v1F-qp-OFW"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -87,20 +86,20 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="🌮Cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="🌮Cell" id="be1-e7-5rF" customClass="🌮Cell" customModule="DifferentDiffable" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="114" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="166.5" width="414" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="be1-e7-5rF" id="UiU-da-aaZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This shows a taco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOm-HL-UIV">
-                                                    <rect key="frame" x="20" y="11" width="136" height="21.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Behold a taco -&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOm-HL-UIV">
+                                                    <rect key="frame" x="20" y="11" width="126.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🌮" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5G-om-qMs">
-                                                    <rect key="frame" x="371" y="11.5" width="23" height="21"/>
+                                                    <rect key="frame" x="371" y="11" width="23" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
