@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     
     var cancellables = Set<AnyCancellable>()
     
+    var changeNum = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -71,10 +73,14 @@ class ViewController: UIViewController {
                 return Item.🌮(id)
             }
         }
-        newItems.insert(Item.🌮(UUID()), at: 0)
-        newItems.append(Item.🌮(UUID()))
+
+        if changeNum % 5 == 0 {
+            newItems.insert(Item.🌮(UUID()), at: abs(newItems.count - changeNum % newItems.count))
+        }
 
         items.value = newItems
+        
+        changeNum += 1
     }
     
     
